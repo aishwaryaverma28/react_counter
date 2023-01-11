@@ -8,7 +8,13 @@ export default function Counter () {
   }
 
   function decrease(){
+    if(count > 0)
     setCount(count - 1);
+    else
+    {
+     setCount(0);
+     alert('Sorry, minimum value is reached');
+    }
   }
   return (
     <>
